@@ -11,13 +11,13 @@ Particular steps are followed to achieve the goal –
 With the help of if else one of the feature detection technique will be selected.
 
 3. Now as we are able to calculate the key points in sets of images with the help of OpenCV different algorithms. We bound our focus only on preceding vehicle, to whom we in future calculate the TTC. To do this, we are going to define the rectangle only use the key points within the rectangle for further processing.
+
 4. Descriptors: they are the way to compare the key points. They summarize, in vector format (of constant length) some characteristics about the key points. For example, it could be their intensity in the direction of their most pronounced orientation. It's assigning a numerical description to the area of the image the key point refers to.
 Some important things for descriptors are:
 •	they should be independent of key point position.
 •	they should be robust against image transformation.
 •	they should be scale independent.
-
-Same as feature detection, we experimented with a few of the known Key point Descriptors, namely BRIEF, ORB, FREAK, AKAZE and SIFT and make them selectable by setting a string accordingly.
+Same as feature detection, we experimented with a few of the known Key point Descriptors, namely BRIEF, ORB, FREAK, AKAZE and SIFT and make them selectable by setting a   string accordingly.
 
 5. Last step two steps are descriptor matching. In this second last step we approach to image matching consists of detecting a set of interest points each associated with image descriptors from image data. Once the features and their descriptors have been extracted from two or more images, the next step is to establish some preliminary feature matches between these images. Two main algorithm of matching are –
 •	Brute-Force Matcher
