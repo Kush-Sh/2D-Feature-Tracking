@@ -25,6 +25,7 @@ Same as feature detection, we experimented with a few of the known Key point Des
  
 6. Last step is to use the K-Nearest-Neighbor (with k Neighbor = 2) matching to implement the descriptor distance ratio 0.8, which looks at the ratio of best vs. second-best match to decide whether to keep an associated pair of keypoints.
 
+<img src="images/Matching keypoints low resolution.jpg" width="820" height="248" />
 
 
 ## Dependencies for Running Locally
